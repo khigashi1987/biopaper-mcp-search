@@ -102,7 +102,7 @@ Claude Desktop の設定ファイルを直接編集します：
 ## 使用方法
 
 1. Claude Desktop を起動します
-2. 新しい会話を開始し、入力ボックス下の"Attach from MCP"から「EPMCSearch」を選択します
+2. 新しい会話を開始し、入力ボックス下の"Attach from MCP" -> "Choose an integration" から「EPMCSearch」-> "search_biology_papers" を選択します
 3. 生物学に関する質問を日本語で入力します
 
 例えば：
