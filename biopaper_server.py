@@ -140,16 +140,17 @@ def search_biology_papers(topic: str) -> str:
 
 ユーザーの質問: {topic}
 
+以下のステップに従ってください:
 
 1. 検索クエリの作成:
    - ユーザーの質問を分析し、Europe PMC APIで使用する適切な検索クエリを構築してください。
    - Europe PMC APIでは、以下の構文が使用できます:
      * フィールド指定: TITLE, ABSTRACT, AUTHOR, etc.
      * 論理演算子: AND, OR, NOT
-     * ワイルドカード: * (例: "metagen*")
      * 句の検索: "引用符で囲む"
      * 日付範囲: FIRST_PDATE:[YYYY-MM-DD TO YYYY-MM-DD]
-     * 例: (TITLE:"virus" OR ABSTRACT:"viral") AND (ABSTRACT:"metagenom*") AND (FIRST_PDATE:[2020-01-01 TO 2025-12-31])
+     * 注意: ワイルドカード "*" は使用できません。完全な単語を使用してください。
+     * 例: (TITLE:"virus" OR ABSTRACT:"viral") AND (ABSTRACT:"metagenome" OR ABSTRACT:"metagenomic") AND (FIRST_PDATE:[2020-01-01 TO 2025-12-31])
    - 検索を特定の論文タイプに制限するには: (SRC:MED OR SRC:PMC)を追加（査読済み論文）
    - 専門的で詳細な検索クエリを作成し、それが何をなぜ検索しているかを説明してください。
 
