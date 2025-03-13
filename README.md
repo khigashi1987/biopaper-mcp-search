@@ -35,7 +35,7 @@ conda create -n biopaper-mcp python=3.10
 conda activate biopaper-mcp
 
 # 必要なパッケージをインストール
-pip install mcp httpx pydantic
+pip install mcp "mcp[cli]" httpx pydantic
 ```
 
 ### 3. 動作確認（オプション）
