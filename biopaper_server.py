@@ -28,7 +28,7 @@ class Paper(BaseModel):
 @mcp.tool()
 async def search_european_pmc(
     search_query: str, 
-    max_results: int = 20, 
+    max_results: int = 10, 
     ctx: Context = None
 ) -> Dict[str, Any]:
     """
