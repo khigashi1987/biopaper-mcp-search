@@ -1,6 +1,6 @@
-# バイオ論文検索 MCP サービス
+# Europe PMC論文検索 MCP サービス
 
-バイオインフォマティクス・生物学論文検索のための Claude Desktop MCP サービス
+生物学論文検索のための Claude Desktop MCP サービス
 
 </div>
 
